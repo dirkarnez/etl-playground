@@ -56,10 +56,10 @@ jobs:
           -DCMAKE_CXX_COMPILER=avr-g++ ^
           -DCMAKE_MAKE_PROGRAM=mingw32-make ^
           -DCMAKE_BUILD_TYPE=Release ^
-          -DCMAKE_NO_SYSTEM_FROM_IMPORTED=YES ^  
+          -DCMAKE_NO_SYSTEM_FROM_IMPORTED=YES ^
           -DCMAKE_CXX_FLAGS="-D__STDC_LIMIT_MACROS" ^
           -Detl_DIR="%CD_LINUX%/etl-v20.36.1-avr8-gnu-toolchain-3.7.0.1796-win32.any.x86_64/share/etl/cmake" ^
-          -DCMAKE_CXX_FLAGS="-D__STDC_LIMIT_MACROS" -B./cmake-build && ^
+          -B./cmake-build && ^
           cd cmake-build && ^
           cmake --build .
           
